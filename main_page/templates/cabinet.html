@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Ваши курсы:<br>
+{% for i in user_cabinet %}
+
+Курс: <a href="/user_course/{{i.user_courses}}">{{i.user_courses}}</a>
+<hr>
+
+{% endfor %}
+</body>
+</html>
